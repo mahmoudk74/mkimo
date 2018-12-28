@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ashraf.example.com.communication.Register">
+    <include android:id="@+id/register_toolbar" layout="@layout/app_bar_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginEnd="0dp" android:layout_marginStart="0dp" android:layout_marginTop="0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/Reg_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/reg_display_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Reg_display_name"
+        android:layout_alignRight="@+id/Reg_display_name"
+        android:layout_below="@+id/Reg_display_name"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_job"
+        android:layout_below="@+id/reg_display_password"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        />
+
+    <EditText
+        android:id="@+id/reg_display_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_display_email"
+        android:layout_alignRight="@+id/reg_display_email"
+        android:layout_below="@+id/reg_display_email"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/creat_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/reg_display_password"
+        android:layout_alignRight="@+id/reg_display_password"
+        android:layout_below="@+id/reg_display_password"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="74dp"
+        android:background="@color/colorAccent"
+        android:text="Register"
+        android:textSize="24sp" />
+
+</RelativeLayout>
